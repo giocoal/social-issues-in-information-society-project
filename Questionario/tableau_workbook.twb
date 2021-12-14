@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1112.1434                               -->
+<workbook original-version='18.1' source-build='2021.3.4 (20213.21.1112.1434)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Form_progetto' inline='true' name='federated.10cb6e21yzyag810c2gs316mm5in' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Form_progetto' name='textscan.1dhylq0017wn6x133w4tm1tmho6v'>
+            <connection class='textscan' directory='C:/Users/Giorgio/OneDrive - Universita degli Studi di Milano-Bicocca/Laurea Magistrale - Data Science/directory_progetti/Social_Issues/Questionario' filename='Form_progetto.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1dhylq0017wn6x133w4tm1tmho6v' name='Form_progetto.csv' table='[Form_progetto#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=','>
+            <column datatype='string' name='Informazioni cronologiche' ordinal='0' />
+            <column datatype='date' name='Anno di nascita:' ordinal='1' />
+            <column datatype='string' name='Genere in cui ti identifichi:' ordinal='2' />
+            <column datatype='string' name='Ultimo titolo di studio conseguito:' ordinal='3' />
+            <column datatype='string' name='Quante ore al giorno mediamente utilizzi lo smartphone?' ordinal='4' />
+            <column datatype='string' name='Per cosa utilizzi principalmente lo smartphone?' ordinal='5' />
+            <column datatype='string' name='Quante ore al giorno mediamente utilizzi il computer?' ordinal='6' />
+            <column datatype='string' name='Per cosa utilizzi principalmente il computer?' ordinal='7' />
+            <column datatype='string' name='Primo dispositivo digitale utilizzato:' ordinal='8' />
+            <column datatype='string' name='Età dell&apos;utilizzo del primo dispositivo digitale:' ordinal='9' />
+            <column datatype='string' name='Dove hai imparato ad utilizzare il primo dispositivo digitale?' ordinal='10' />
+            <column datatype='string' name='Oggi come ti approcci ad una nuova app/software/dispositivo?' ordinal='11' />
+            <column datatype='integer' name='Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?' ordinal='12' />
+            <column datatype='string' name='Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?' ordinal='13' />
+            <column datatype='string' name='Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1dhylq0017wn6x133w4tm1tmho6v' name='Form_progetto.csv' table='[Form_progetto#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT' separator=','>
+            <column datatype='string' name='Informazioni cronologiche' ordinal='0' />
+            <column datatype='date' name='Anno di nascita:' ordinal='1' />
+            <column datatype='string' name='Genere in cui ti identifichi:' ordinal='2' />
+            <column datatype='string' name='Ultimo titolo di studio conseguito:' ordinal='3' />
+            <column datatype='string' name='Quante ore al giorno mediamente utilizzi lo smartphone?' ordinal='4' />
+            <column datatype='string' name='Per cosa utilizzi principalmente lo smartphone?' ordinal='5' />
+            <column datatype='string' name='Quante ore al giorno mediamente utilizzi il computer?' ordinal='6' />
+            <column datatype='string' name='Per cosa utilizzi principalmente il computer?' ordinal='7' />
+            <column datatype='string' name='Primo dispositivo digitale utilizzato:' ordinal='8' />
+            <column datatype='string' name='Età dell&apos;utilizzo del primo dispositivo digitale:' ordinal='9' />
+            <column datatype='string' name='Dove hai imparato ad utilizzare il primo dispositivo digitale?' ordinal='10' />
+            <column datatype='string' name='Oggi come ti approcci ad una nuova app/software/dispositivo?' ordinal='11' />
+            <column datatype='integer' name='Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?' ordinal='12' />
+            <column datatype='string' name='Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?' ordinal='13' />
+            <column datatype='string' name='Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Informazioni cronologiche</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Informazioni cronologiche]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Informazioni cronologiche</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anno di nascita:</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Anno di nascita:]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Anno di nascita:</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genere in cui ti identifichi:</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genere in cui ti identifichi:]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Genere in cui ti identifichi:</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ultimo titolo di studio conseguito:</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ultimo titolo di studio conseguito:]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Ultimo titolo di studio conseguito:</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quante ore al giorno mediamente utilizzi lo smartphone?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quante ore al giorno mediamente utilizzi lo smartphone?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Quante ore al giorno mediamente utilizzi lo smartphone?</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Per cosa utilizzi principalmente lo smartphone?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Per cosa utilizzi principalmente lo smartphone?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Per cosa utilizzi principalmente lo smartphone?</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quante ore al giorno mediamente utilizzi il computer?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quante ore al giorno mediamente utilizzi il computer?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Quante ore al giorno mediamente utilizzi il computer?</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Per cosa utilizzi principalmente il computer?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Per cosa utilizzi principalmente il computer?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Per cosa utilizzi principalmente il computer?</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primo dispositivo digitale utilizzato:</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primo dispositivo digitale utilizzato:]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Primo dispositivo digitale utilizzato:</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Età dell&apos;utilizzo del primo dispositivo digitale:</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Età dell&apos;utilizzo del primo dispositivo digitale:]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Età dell&apos;utilizzo del primo dispositivo digitale:</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dove hai imparato ad utilizzare il primo dispositivo digitale?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dove hai imparato ad utilizzare il primo dispositivo digitale?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Dove hai imparato ad utilizzare il primo dispositivo digitale?</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oggi come ti approcci ad una nuova app/software/dispositivo?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Oggi come ti approcci ad una nuova app/software/dispositivo?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Oggi come ti approcci ad una nuova app/software/dispositivo?</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?]</local-name>
+            <parent-name>[Form_progetto.csv]</parent-name>
+            <remote-alias>Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Eta`' datatype='date' datatype-customized='true' name='[Calculation_1472677127400595472]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(IF NOT ISNULL( DATEPARSE ( &quot;mm&quot;, STR(DATEDIFF(&apos;year&apos;, DATETIME([Anno di nascita:]), Today())) )  ) THEN DATEPARSE ( &quot;mm&quot;, STR(DATEDIFF(&apos;year&apos;, DATETIME([Anno di nascita:]), Today())) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yy&quot;, STR(DATEDIFF(&apos;year&apos;, DATETIME([Anno di nascita:]), Today())) )  ) THEN DATEPARSE ( &quot;yy&quot;, STR(DATEDIFF(&apos;year&apos;, DATETIME([Anno di nascita:]), Today())) )   END)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Form_progetto.csv' datatype='table' name='[__tableau_internal_object_id__].[Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Form_progetto.csv' id='Form_progetto.csv_EA8B395F38FE4F77B5D9BEDF4A03E5C7'>
+            <properties context=''>
+              <relation connection='textscan.1dhylq0017wn6x133w4tm1tmho6v' name='Form_progetto.csv' table='[Form_progetto#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=','>
+                  <column datatype='string' name='Informazioni cronologiche' ordinal='0' />
+                  <column datatype='date' name='Anno di nascita:' ordinal='1' />
+                  <column datatype='string' name='Genere in cui ti identifichi:' ordinal='2' />
+                  <column datatype='string' name='Ultimo titolo di studio conseguito:' ordinal='3' />
+                  <column datatype='string' name='Quante ore al giorno mediamente utilizzi lo smartphone?' ordinal='4' />
+                  <column datatype='string' name='Per cosa utilizzi principalmente lo smartphone?' ordinal='5' />
+                  <column datatype='string' name='Quante ore al giorno mediamente utilizzi il computer?' ordinal='6' />
+                  <column datatype='string' name='Per cosa utilizzi principalmente il computer?' ordinal='7' />
+                  <column datatype='string' name='Primo dispositivo digitale utilizzato:' ordinal='8' />
+                  <column datatype='string' name='Età dell&apos;utilizzo del primo dispositivo digitale:' ordinal='9' />
+                  <column datatype='string' name='Dove hai imparato ad utilizzare il primo dispositivo digitale?' ordinal='10' />
+                  <column datatype='string' name='Oggi come ti approcci ad una nuova app/software/dispositivo?' ordinal='11' />
+                  <column datatype='integer' name='Quanto spesso i tuoi genitori ti chiedono aiuto per utilizzare un dispositivo digitale?' ordinal='12' />
+                  <column datatype='string' name='Per quante ore al giorno pensi che i tuoi genitori utilizzino mediamente lo smartphone?' ordinal='13' />
+                  <column datatype='string' name='Per cosa pensi che i tuoi genitori utilizzino principalmente i dispositivi digitali?' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Aree'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Form_progetto' name='federated.10cb6e21yzyag810c2gs316mm5in' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10cb6e21yzyag810c2gs316mm5in'>
+            <column datatype='string' name='[Dove hai imparato ad utilizzare il primo dispositivo digitale?]' role='dimension' type='nominal' />
+            <column-instance column='[Dove hai imparato ad utilizzare il primo dispositivo digitale?]' derivation='Count' name='[cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dove hai imparato ad utilizzare il primo dispositivo digitale?]' derivation='None' name='[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dove hai imparato ad utilizzare il primo dispositivo digitale?]' derivation='Count' name='[pcto:cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.10cb6e21yzyag810c2gs316mm5in].[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Dove hai imparato ad utilizzare il primo dispositivo digitale?]' derivation='Count' name='[pcto:cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.10cb6e21yzyag810c2gs316mm5in].[pcto:cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk:1]' />
+              <text column='[federated.10cb6e21yzyag810c2gs316mm5in].[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]' />
+              <text column='[federated.10cb6e21yzyag810c2gs316mm5in].[cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk]' />
+              <text column='[federated.10cb6e21yzyag810c2gs316mm5in].[pcto:cnt:Dove hai imparato ad utilizzare il primo dispositivo digitale?:qk:2]' />
+              <color column='[federated.10cb6e21yzyag810c2gs316mm5in].[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B47D2168-936B-49FA-A52E-E16B66F2B764}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Form_progetto' name='federated.10cb6e21yzyag810c2gs316mm5in' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10cb6e21yzyag810c2gs316mm5in'>
+            <column datatype='date' name='[Anno di nascita:]' role='dimension' type='ordinal' />
+            <column-instance column='[Anno di nascita:]' derivation='None' name='[none:Anno di nascita::qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Anno di nascita::qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F1900FFA-403D-45C3-9AB4-4C04F9EE1FA5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Aree'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10cb6e21yzyag810c2gs316mm5in].[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[:Measure Names]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Dove hai imparato ad utilizzare il primo dispositivo digitale?:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{69C21B57-6186-4B61-9AFE-6D6CE7AB29DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Calculation_1472677127399911432:qk]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Calculation_1472677127400026121:qk]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Calculation_1472677127400050698:qk]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Calculation_1472677127400144908:qk]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[none:Calculation_1472677127400349711:qk]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[yr:Anno di nascita::ok]</field>
+            <field>[federated.10cb6e21yzyag810c2gs316mm5in].[yr:Calculation_1472677127400595472:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{34563A02-0669-4D0E-BFBA-015D91D4EC9F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Aree' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='130'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
